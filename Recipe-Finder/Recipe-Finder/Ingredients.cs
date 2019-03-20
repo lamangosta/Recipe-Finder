@@ -8,8 +8,8 @@ namespace Recipe_Finder
 {
     class Ingredients
     {
-        public string Fixing1 { get; set; }
-        public string Fixing2 { get; set; }
-        public string Fixing3 { get; set; }
+        public string Fixings1 { get; set; }
+        public string Fixings2 { get; set; }
+        public string Fixings3 { get; set; }
     }
 }
