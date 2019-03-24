@@ -10,6 +10,11 @@ namespace Recipe_Finder
     {
         static void Main(string[] args)
         {
+            Console.Write("Enter three ingredients?");
+            Console.ReadLine();
+
         }
+
+
     }
 }
