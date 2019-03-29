@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe-Finder", "Recipe-Finder\Recipe-Finder.csproj", "{15EE8E33-8100-43E8-86BB-555EAD6D10FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{454B05EA-F68F-4897-B6F5-DA25758FEFBC}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+		..\..\..\..\Downloads\Recipes.csv = ..\..\..\..\Downloads\Recipes.csv
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

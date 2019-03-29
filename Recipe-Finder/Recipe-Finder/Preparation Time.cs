@@ -11,6 +11,7 @@ namespace Recipe_Finder
         public string Fixings1 { get; set; }
         public string Fixings2 { get; set; }
         public string Fixings3 { get; set; }
+
     }
 }
 
