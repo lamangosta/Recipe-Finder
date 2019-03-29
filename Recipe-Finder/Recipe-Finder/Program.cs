@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using RecipeFinder;
+using RecipeResult;
 
 namespace RecipeFinder
 {
@@ -19,7 +21,10 @@ namespace RecipeFinder
 
             SelectRecipe();
 
-            
+            var recipe = new RecipeResult();
+            return;
+
+      
         }
 
         public static string ReadFile(string fileName)
@@ -50,9 +55,36 @@ namespace RecipeFinder
         public static void SelectRecipe()
         {
             Console.WriteLine("Select a recipe from this list & I will tell the ingredients you'll need & how long it will take to prepare & cook.");
+            
+            var userResponse = Console.ReadLine();
+
+            //Print Blank Line
+            Console.WriteLine();
+
+            //Show the recipe user entered
+
+            Console.WriteLine("Your recipe is {0}.",userResponse);
             Console.ReadLine();
 
         }
+
+        public static void WriteData(string fileName, List<string[]>recipeResults)
+        {
+            string RecipeResult = string.Empty;
+
+                foreach (RecipeResults recipe in RecipeResult)
+                {
+                    RecipeResult +=
+                    recipe.Recipes + "," +
+                    recipe.Ingredients + "," +
+                    recipe.PreparationTime + "," +
+                    recipe.CookTime + "," +
+                    Environment.NewLine;
+                }
+            File.WriteAllText(fileName, RecipeResult);
+        }
+
+
 
     }
  
